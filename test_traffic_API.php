@@ -18,8 +18,8 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 $result = curl_exec($ch);
 curl_close($ch);
 echo "OK";
-//var_dump($result)."<br>";
-//var_dump($ch)."<br>";
+var_dump($result)."<br>";
+var_dump($ch)."<br>";
 
 
 
