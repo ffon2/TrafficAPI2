@@ -1,6 +1,6 @@
 <?php
-$stops = $_POST['stops'];
-$vehicles = $_POS['vehicles'];
+$stops = array($_POST['stops']);
+$vehicles = array($_POS['vehicles']);
 $commons = $_POS['commons'];
 
 $url = "https://apiplatform.rtic-thai.info:8243/logistics/1.0.0/mvrp";
@@ -22,4 +22,4 @@ $result = curl_exec($ch);
 curl_close($ch);
 echo "OK";
 var_dump($result)."<br>";
-var_dump($_POST);
+var_dump($_POST)."<br>";
