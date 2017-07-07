@@ -12,11 +12,11 @@ $header = array(
 );
 
 $ch = curl_init($url);
-curl_setopt($ch, CURLOPT_POS, true);
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $_POS);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $_POST);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 $result = curl_exec($ch);
 curl_close($ch);
