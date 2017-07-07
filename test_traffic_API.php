@@ -21,9 +21,8 @@ $result = curl_exec($ch);
 curl_close($ch);
 echo "OK";
 var_dump($result)."<br>";
-//var_dump($ch)."<br>";
-var_dump($post_data)."<br>";
-var_dump($_GET)."<br>";
+var_dump($ch)."<br>";
+
 
 
 
