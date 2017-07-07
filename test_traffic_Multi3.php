@@ -20,7 +20,6 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $_POST);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 $result = curl_exec($ch);
 curl_close($ch);
-echo "OK";
 echo "--------------------\n";
 var_dump($result)."<br><br>";
 echo "--------------------\n";
